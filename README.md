@@ -1,2 +1,0 @@
-# assignments
-Emil's assignments
