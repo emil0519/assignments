@@ -53,8 +53,7 @@ h5{
 
   .header-text{
     display: flex;
-/*     align-slef: center;
-    justify-content: center; */
+    align-items: center;
   }
 
   nav{
