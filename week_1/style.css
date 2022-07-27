@@ -103,7 +103,7 @@ nav {
 }
 /* Media query */
 
-@media (min-width: 501px) and (max-width: 799.9px) {
+@media (min-width: 500px) and (max-width: 799.9px) {
   .box {
     width: 40vw;
     height: 20vh;
