@@ -1,7 +1,7 @@
 //Question 1//
 
 function max(array) {
-  let val = -1;
+  let val = array[0];
 
   for (let i = 0; i < array.length; i++) {
     if (array[i] > val) {
