@@ -1,9 +1,9 @@
 //Question 1//
 
 function max(array) {
-  var val = 0;
+  let val = -1;
 
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] > val) {
       val = array[i];
     }
@@ -12,7 +12,7 @@ function max(array) {
   return val;
 }
 
-console.log(max([1, 2, 4, 5]));
+console.log(max([-1, -2, -4, -5]));
 console.log(max([5, 2, 7, 1, 6]));
 
 //Question 2//
@@ -31,14 +31,14 @@ console.log(calculate({ n1: 2, n2: 3, op: "+" }));
 console.log(calculate({ n1: 5, n2: 2, op: "-" }));
 console.log(calculate({ n1: 1, n2: 6, op: "x" }));
 
-// Question 3//
+// Question 3/
 
 function cal(discounted) {
   let total = 0;
   for (let i = 0; i < discounted.products.length; i++) {
     total += discounted.products[i].price;
   }
-  return total * discounted.discount;
+  return total * (1 - discounted.discount);
 }
 
 const discountedPrice = cal({
@@ -64,13 +64,12 @@ console.log(discountedPrice);
 //Question 4//
 
 function twoSum(nums, target) {
-  var val = [];
+  let val = [];
 
-  for (var i = 0; i < nums.length; i++) {
-    for (var x = 0; x < nums.length; x++) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let x = 0; x < nums.length; x++) {
       if (nums[i] + nums[x] === target) {
-        val.push(nums.indexOf(nums[i]));
-        val.push(nums.indexOf(nums[x]));
+        val.push(i, x);
       }
     }
   }
@@ -94,4 +93,8 @@ delayedResult(4, 5, 3000, function (result) {
 
 delayedResult(-5, 10, 2000, function (result) {
   window.alert(result);
+<<<<<<< HEAD
+});
+=======
 }); 
+>>>>>>> 6dc33ad491a4d29166dd3439951f328af77aa5e3
