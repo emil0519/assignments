@@ -26,4 +26,4 @@ function cal(discounted) {
     ],
   }); 
   
-  console.log(discountedPrice);
+  console.log(discountedPrice); 

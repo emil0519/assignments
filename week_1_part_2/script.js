@@ -95,3 +95,4 @@ delayedResult(4, 5, 3000, function (result) {
 delayedResult(-5, 10, 2000, function (result) {
   window.alert(result);
 }); 
+ 
