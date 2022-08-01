@@ -56,6 +56,40 @@ nav {
   margin: 1.5rem;
   list-style: none;
 }
+
+.small {
+  display: none;
+}
+
+.small-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: white;
+  transform: translateX(50%);
+  /* transition: transform 250ms ease-in-out; */
+}
+
+.small-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: flex-start;
+  height: 30%;
+  /* transform: ; */
+}
+
+.close {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+  right: 10px;
+  cursor: pointer;
+}
+
 .banner {
   background-color: var(--light-blue);
   padding: 6em 1vw;
@@ -100,6 +134,11 @@ nav {
   background: var(--light-blue);
   color: var(--black);
   padding: 0.2rem;
+  cursor: pointer;
+}
+
+.more-sec-box {
+  display: none;
 }
 /* Media query */
 

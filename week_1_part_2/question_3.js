@@ -5,7 +5,7 @@ function cal(discounted) {
     for (let i = 0; i < discounted.products.length; i++) {
       total += discounted.products[i].price;
     }
-    return total * discounted.discount;
+    return total *= discounted.discount;
   }
   
   const discountedPrice = cal({
