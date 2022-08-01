@@ -14,6 +14,6 @@ function render(data) {
   document.querySelector(".product-list").innerHTML = response;
 }
 
-ajax("https://appworks-school.github.io/Remote-Assignment-Data/products").then(
+ajax("https://appworks-school.github.io/Remote-Aassigiment-Data/products").then(
   (data) => render(data)
 );
