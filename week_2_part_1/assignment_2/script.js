@@ -2,7 +2,7 @@ function ajax(url) {
   return fetch(url).then((data) => data.json());
 }
 function render(data) {
-  let response = "";
+  const response = "";
   for (element of data) {
     response += `<ul>
     <li>${element.name}是
