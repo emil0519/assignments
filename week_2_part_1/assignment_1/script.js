@@ -1,9 +1,9 @@
-let headerText = document.querySelector(".banner-text");
-let closeButton = document.querySelector(".close");
-let small = document.querySelector(".small");
-let headerButton = document.querySelector(".header-btn");
-let bottomButton = document.querySelector(".bottom-text");
-let moreBox = document.querySelector(".more-sec-box");
+const headerText = document.querySelector(".banner-text");
+const closeButton = document.querySelector(".close");
+const small = document.querySelector(".small");
+const headerButton = document.querySelector(".header-btn");
+const bottomButton = document.querySelector(".bottom-text");
+const moreBox = document.querySelector(".more-sec-box");
 
 headerText.addEventListener("click", () => {
   headerText.textContent = "Have a Good Time!";
